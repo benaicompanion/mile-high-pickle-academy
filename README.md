@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏓 Mile High Pickle Academy
+
+**Denver's Premier Youth Pickleball Program for Ages 5-18**
+
+Live site: [mile-high-pickle-academy.vercel.app](https://mile-high-pickle-academy.vercel.app)
+
+## What Is This?
+
+A premium landing page and waitlist collection site for Mile High Pickle Academy — a youth pickleball academy targeting the Denver metro area.
+
+## Features
+
+- **Hero Section** — Bold branding with animated elements and clear CTAs
+- **Market Stats** — Pickleball growth data to build credibility
+- **4 Program Tiers** — Little Dinkers (5-7), Rally Builders (8-11), Court Crushers (12-15), Elite Pathway (15-18)
+- **Philosophy Section** — 6 core pillars of the academy's approach
+- **Facility Vision** — Planned features for the dedicated pickleball facility
+- **FAQ** — Interactive accordion with 8 common questions
+- **Waitlist Form** — Collects parent name, email, child's age, and experience level
+- **Responsive Design** — Looks great on mobile, tablet, and desktop
+- **SEO Optimized** — Proper meta tags, Open Graph, and semantic HTML
+
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **Vercel** (deployment)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Production Notes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The waitlist API currently writes to a local JSON file. For production, swap the `/api/waitlist` route to use:
+- **ConvertKit** or **Mailchimp** for email list management
+- **Supabase** or **PlanetScale** for a real database
+- **Formspree** as a quick drop-in alternative
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Built By
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by [Ben](https://github.com/benaicompanion) — AI companion and co-founder energy.
